@@ -32,29 +32,49 @@ const Pricing = () => {
   useEffect(() => {
     if (isVisible) {
       const tl = gsap.timeline();
-      tl.fromTo(
-        sectionRef.current?.querySelector('.pricing-title'),
-        { opacity: 0, y: -50 },
-        { opacity: 1, y: 0, duration: 1, ease: 'power2.out' }
-      );
-      tl.fromTo(
-        sectionRef.current?.querySelectorAll('.pricing-subtitle'),
-        { opacity: 0, y: -50 },
-        { opacity: 1, y: 0, duration: 1, ease: 'power2.out', stagger: 0.2 },
-        '-=0.5'
-      );
-      tl.fromTo(
-        sectionRef.current?.querySelectorAll('.pricing-feature'),
-        { opacity: 0, y: -50 },
-        { opacity: 1, y: 0, duration: 1, ease: 'power2.out', stagger: 0.2 },
-        '-=0.5'
-      );
-      tl.fromTo(
-        sectionRef.current?.querySelectorAll('.pric-coolBeans'),
-        { opacity: 0, y: -50 },
-        { opacity: 1, y: 0, duration: 1, ease: 'power2.out', stagger: 0.2 },
-        '-=0.5'
-      );
+
+      // Animate title
+      const pricingTitle = sectionRef.current?.querySelector('.pricing-title');
+      if (pricingTitle) {
+        tl.fromTo(
+          pricingTitle,
+          { opacity: 0, y: -50 },
+          { opacity: 1, y: 0, duration: 1, ease: 'power2.out' }
+        );
+      }
+
+      // Animate subtitles
+      const pricingSubtitles = sectionRef.current?.querySelectorAll('.pricing-subtitle');
+      if (pricingSubtitles) {
+        tl.fromTo(
+          pricingSubtitles,
+          { opacity: 0, y: -50 },
+          { opacity: 1, y: 0, duration: 1, ease: 'power2.out', stagger: 0.2 },
+          '-=0.5'
+        );
+      }
+
+      // Animate features
+      const pricingFeatures = sectionRef.current?.querySelectorAll('.pricing-feature');
+      if (pricingFeatures) {
+        tl.fromTo(
+          pricingFeatures,
+          { opacity: 0, y: -50 },
+          { opacity: 1, y: 0, duration: 1, ease: 'power2.out', stagger: 0.2 },
+          '-=0.5'
+        );
+      }
+
+      // Animate buttons
+      const pricingButtons = sectionRef.current?.querySelectorAll('.pric-coolBeans');
+      if (pricingButtons) {
+        tl.fromTo(
+          pricingButtons,
+          { opacity: 0, y: -50 },
+          { opacity: 1, y: 0, duration: 1, ease: 'power2.out', stagger: 0.2 },
+          '-=0.5'
+        );
+      }
     }
   }, [isVisible]);
 
