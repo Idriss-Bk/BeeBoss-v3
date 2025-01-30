@@ -75,7 +75,7 @@ const CES: React.FC = () => {
           {categories.map((category, index) => (
             <div
               key={index}
-              ref={(el) => (cardsRef.current[index] = el)}
+              ref={(el) => { cardsRef.current[index] = el; }}
               className='card bg-gray-100 rounded-xl p-6 h-[500px] flex flex-col justify-between shadow-custom'
             >
               <div>
