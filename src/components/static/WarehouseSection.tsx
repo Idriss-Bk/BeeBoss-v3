@@ -31,29 +31,49 @@ const WarehouseSection = () => {
   useEffect(() => {
     if (isVisible) {
       const tl = gsap.timeline();
-      tl.fromTo(
-        sectionRef.current?.querySelector('.section-title'),
-        { opacity: 0, y: -50 },
-        { opacity: 1, y: 0, duration: 1, ease: 'power2.out' }
-      );
-      tl.fromTo(
-        sectionRef.current?.querySelector('.section-subtitle'),
-        { opacity: 0, y: -50 },
-        { opacity: 1, y: 0, duration: 1, ease: 'power2.out' },
-        '-=0.5'
-      );
-      tl.fromTo(
-        sectionRef.current?.querySelector('.section-description'),
-        { opacity: 0, y: 50 },
-        { opacity: 1, y: 0, duration: 1, ease: 'power2.out' },
-        '-=0.5'
-      );
-      tl.fromTo(
-        sectionRef.current?.querySelector('.section-button'),
-        { opacity: 0, y: 50 },
-        { opacity: 1, y: 0, duration: 1, ease: 'power2.out' },
-        '-=0.5'
-      );
+
+      // Animate title
+      const sectionTitle = sectionRef.current?.querySelector('.section-title');
+      if (sectionTitle) {
+        tl.fromTo(
+          sectionTitle,
+          { opacity: 0, y: -50 },
+          { opacity: 1, y: 0, duration: 1, ease: 'power2.out' }
+        );
+      }
+
+      // Animate subtitle
+      const sectionSubtitle = sectionRef.current?.querySelector('.section-subtitle');
+      if (sectionSubtitle) {
+        tl.fromTo(
+          sectionSubtitle,
+          { opacity: 0, y: -50 },
+          { opacity: 1, y: 0, duration: 1, ease: 'power2.out' },
+          '-=0.5'
+        );
+      }
+
+      // Animate description
+      const sectionDescription = sectionRef.current?.querySelector('.section-description');
+      if (sectionDescription) {
+        tl.fromTo(
+          sectionDescription,
+          { opacity: 0, y: 50 },
+          { opacity: 1, y: 0, duration: 1, ease: 'power2.out' },
+          '-=0.5'
+        );
+      }
+
+      // Animate button
+      const sectionButton = sectionRef.current?.querySelector('.section-button');
+      if (sectionButton) {
+        tl.fromTo(
+          sectionButton,
+          { opacity: 0, y: 50 },
+          { opacity: 1, y: 0, duration: 1, ease: 'power2.out' },
+          '-=0.5'
+        );
+      }
     }
   }, [isVisible]);
 
@@ -72,9 +92,9 @@ const WarehouseSection = () => {
       </div>
       <div className='section-description font-poppins font-light text-lg max-w-4xl mt-10 mb-6'>
         Utilize our warehouse in Germany for shipping and returns of high-quality dropshipping products from Europe, Italy, and Turkey. Our products come from the European market, and we offer direct tracking service for your customers through DHL Germany.
-        
+
         The best part? You can operate without any upfront payments or storage costs! Earn money as a middleman and use our custom packaging that we prepare just for you.
-        
+
         Start now with this all-in-one solution and take your online business to the next level!
       </div>
       <button className='section-button coolBeans text-md font-poppins text-white border-2 border-white rounded-full px-10 py-4 flex justify-center mx-auto'>
