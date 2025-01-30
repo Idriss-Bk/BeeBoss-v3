@@ -89,7 +89,7 @@ const Pricing = () => {
           <div className='pricing-subtitle font-fraunces text-3xl font-light text-center mb-5'>
             Monthly <span className='font-bold text-4xl'>€89</span>
           </div>
-          <div className='text-center text-sm font-light mb-4'>
+          <div className='text-center text-sm font-poppins mb-4'>
             Unlock premium features and benefits
           </div>
           <hr className='border-t border-gray-800 opacity-50 my-4' />
@@ -147,7 +147,7 @@ const Pricing = () => {
           <div className='pricing-subtitle font-fraunces text-3xl font-light text-center mb-5'>
             One-time <span className='font-bold text-4xl'>€999</span>
           </div>
-          <div className='text-center text-sm font-light mb-4'>
+          <div className='text-center text-sm  mb-4'>
             Unlock premium features and benefits
           </div>
           <hr className='border-t border-gray-800 opacity-50 my-4' />

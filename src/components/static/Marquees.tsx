@@ -4,7 +4,7 @@ import Marquee from "react-fast-marquee";
 const Marquees = () => {
   return (
     <section className="bg-black px-5 lg:px-0">
-      <h2 className="font-fraunces text-slate-100 font-medium text-xl md:text-3xl text-center mb-2">Unsere Partner</h2>
+      <h2 className="font-fraunces text-slate-100 font-light text-xl md:text-4xl text-center mb-2">Unsere Partner</h2>
       <Marquee
         pauseOnHover
         className="container mx-auto !bg-transparent"

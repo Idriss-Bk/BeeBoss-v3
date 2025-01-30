@@ -1,8 +1,7 @@
 "use client";
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { BiDownArrow } from "react-icons/bi";
-import Ques from "../../../public/ques.png"
+import Ques from "../../../public/faqs.png"
 import Image from "next/image";
 import { SlArrowDown } from "react-icons/sl";
 import { Poppins } from "next/font/google";
@@ -71,8 +70,8 @@ const Faqs = () => {
         Have Some Questions?
       </h3>
       <div className="mt-10 lg:flex gap-8">
-        <div className="lg:w-5/12 flex justify-center items-center">
-            <Image src={Ques} alt="Faq" height={450} width={450} />
+        <div className="lg:w-5/12 flex justify-center   ">
+            <Image src={Ques} alt="Faq" height={430} width={430} />
         </div>
         <div className="lg:w-7/12">
           <div className="w-full max-w-2xl mx-auto space-y-2">

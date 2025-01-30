@@ -12,8 +12,8 @@ export default function Home() {
   return (
 <>
 <Hero />
-<Marquees />
 <Mission />
+<Marquees />
 <CES />
 <WarehouseSection/>
 <Reviews/>
