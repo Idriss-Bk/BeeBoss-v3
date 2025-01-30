@@ -36,39 +36,51 @@ const Mission = () => {
       const tl = gsap.timeline();
 
       // Animate title
-      tl.fromTo(
-        sectionRef.current?.querySelector('.mission-title'),
-        { opacity: 0, y: -50 },
-        { opacity: 1, y: 0, duration: 1, ease: 'power2.out' }
-      );
+      const missionTitle = sectionRef.current?.querySelector('.mission-title');
+      if (missionTitle) {
+        tl.fromTo(
+          missionTitle,
+          { opacity: 0, y: -50 },
+          { opacity: 1, y: 0, duration: 1, ease: 'power2.out' }
+        );
+      }
 
       // Animate subtitle
-      tl.fromTo(
-        sectionRef.current?.querySelector('.mission-subtitle'),
-        { opacity: 0, y: -50 },
-        { opacity: 1, y: 0, duration: 1, ease: 'power2.out' },
-        '-=0.5'
-      );
+      const missionSubtitle = sectionRef.current?.querySelector('.mission-subtitle');
+      if (missionSubtitle) {
+        tl.fromTo(
+          missionSubtitle,
+          { opacity: 0, y: -50 },
+          { opacity: 1, y: 0, duration: 1, ease: 'power2.out' },
+          '-=0.5'
+        );
+      }
 
       // Animate numbers
-      tl.fromTo(
-        successfulProjectsRef.current,
-        { innerText: 0 },
-        { innerText: 300, duration: 2, ease: 'power2.out', roundProps: 'innerText' },
-        '-=0.5'
-      );
-      tl.fromTo(
-        productLaunchesRef.current,
-        { innerText: 0 },
-        { innerText: 200, duration: 2, ease: 'power2.out', roundProps: 'innerText' },
-        '-=2'
-      );
-      tl.fromTo(
-        happyCustomersRef.current,
-        { innerText: 0 },
-        { innerText: 99, duration: 2, ease: 'power2.out', roundProps: 'innerText' },
-        '-=2'
-      );
+      if (successfulProjectsRef.current) {
+        tl.fromTo(
+          successfulProjectsRef.current,
+          { innerText: 0 },
+          { innerText: 300, duration: 2, ease: 'power2.out', roundProps: 'innerText' },
+          '-=0.5'
+        );
+      }
+      if (productLaunchesRef.current) {
+        tl.fromTo(
+          productLaunchesRef.current,
+          { innerText: 0 },
+          { innerText: 200, duration: 2, ease: 'power2.out', roundProps: 'innerText' },
+          '-=2'
+        );
+      }
+      if (happyCustomersRef.current) {
+        tl.fromTo(
+          happyCustomersRef.current,
+          { innerText: 0 },
+          { innerText: 99, duration: 2, ease: 'power2.out', roundProps: 'innerText' },
+          '-=2'
+        );
+      }
     }
   }, [isVisible]);
 
