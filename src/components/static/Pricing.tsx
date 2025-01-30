@@ -79,7 +79,7 @@ const Pricing = () => {
   }, [isVisible]);
 
   return (
-    <div ref={sectionRef} className='min-h-screen bg-black text-white p-10 flex flex-col items-center'>
+    <div ref={sectionRef} className='min-h-screen bg-black text-white p-10 pb-32 flex flex-col items-center'>
       <div className='pricing-title font-fraunces text-4xl font-light text-center mb-10 flex items-center justify-center mt-40'>
         Unlock Your E-commerce Potential
       </div>

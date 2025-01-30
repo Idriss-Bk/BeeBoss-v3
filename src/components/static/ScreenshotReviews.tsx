@@ -39,23 +39,23 @@ const ScreenshotReviews = () => {
   }, [isVisible]);
 
   return (
-    <div ref={sectionRef} className='min-h-screen bg-black text-white p-10 flex flex-col items-center'>
-      <div className='screenshot-reviews flex flex-col items-center space-y-4'>
-        <div className='screenshot-line flex space-x-4'>
+    <div ref={sectionRef} className='min-h-screen bg-black text-white p-10 flex flex-col items-center overflow-x-hidden'>
+      <div className='screenshot-reviews flex flex-col items-center space-y-4 w-full'>
+        <div className='screenshot-line flex space-x-4 w-max'>
           {Array.from({ length: 12 }).map((_, index) => (
             <div
               key={index}
-              className='screenshot-review-left w-[400px] h-[450px] bg-gray-700 bg-opacity-20 backdrop-blur-sm rounded-lg shadow-lg overflow-hidden'
+              className='screenshot-review-left w-[400px] h-[450px] bg-gray-700 bg-opacity-20 backdrop-blur-sm rounded-lg shadow-lg overflow-hidden flex-shrink-0'
             >
               <img src={`/ScreenReviews/rev${index + 1}.jpeg`} alt={`Screenshot ${index + 1}`} className='w-full h-full object-cover' />
             </div>
           ))}
         </div>
-        <div className='screenshot-line flex space-x-4'>
+        <div className='screenshot-line flex space-x-4 w-max'>
           {Array.from({ length: 11 }).map((_, index) => (
             <div
               key={index}
-              className='screenshot-review-right w-[400px] h-[450px] bg-gray-700 bg-opacity-20 backdrop-blur-sm rounded-lg shadow-lg overflow-hidden'
+              className='screenshot-review-right w-[400px] h-[450px] bg-gray-700 bg-opacity-20 backdrop-blur-sm rounded-lg shadow-lg overflow-hidden flex-shrink-0'
             >
               <img src={`/ScreenReviews/rev${index + 12}.jpeg`} alt={`Screenshot ${index + 12}`} className='w-full h-full object-cover' />
             </div>
