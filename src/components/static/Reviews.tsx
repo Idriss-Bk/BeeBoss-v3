@@ -40,10 +40,10 @@ const Reviews: React.FC = () => {
   };
 
   return (
-    <div className='min-h-screen bg-black py-10 mt-20'>
+    <div className='min-h-screen bg-black py-10 '>
       <div className='container mx-auto px-4 mt-32'>
         <div className='flex flex-col items-center justify-center bg-yellow-50 text-black'>
-          <div className='w-full flex justify-between'>
+          <div className='max-w-6xl mx-auto flex justify-between'>
             <div className='w-58% p-6 flex flex-col justify-center items-start relative overflow-hidden'>
               <div ref={reviewRef} className='review-text font-fraunces font-light text-3xl leading-snug w-[600px]'>
                 {reviews[currentReview].text}
@@ -59,7 +59,7 @@ const Reviews: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className='flex justify-start mt-6 space-x-4 ml-4'>
+      <div className='flex justify-start mt-6 space-x-4 ml-6'>
         <button onClick={handlePrevReview} className='control-button'>
           <MdChevronLeft className='text-2xl' />
         </button>

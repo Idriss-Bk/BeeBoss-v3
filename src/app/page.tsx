@@ -4,6 +4,7 @@ import Mission from "@/components/static/Mission";
 import Pricing from "@/components/static/Pricing";
 import Reviews from "@/components/static/Reviews";
 import ScreenshotReviews from "@/components/static/ScreenshotReviews";
+import WarehouseSection from "@/components/static/WarehouseSection";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
 <Hero />
 <Mission />
 <CES />
+<WarehouseSection/>
 <Reviews/>
 <ScreenshotReviews/>
 <Pricing/>
