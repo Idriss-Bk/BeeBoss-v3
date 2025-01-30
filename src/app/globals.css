@@ -2,20 +2,284 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.gradient-text {
+    background: linear-gradient(90deg, gold, #4B0082); /* Gold to Indigo */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
+
+  .video-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    
+  }
+  
+  .video-hero {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .video-container::before {
+    content: '';
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    width: 80%;
+    height: 80%;
+    
+    z-index: 1;
+    pointer-events: none;
+  }
+  
+  .video-hero {
+    position: relative;
+    z-index: 0;
+  }
+  
+
+  /* Star :  button hero section */
+  
+  .coolBeans {
+    border: 2px solid currentColor;
+    border-radius: 3rem;
+    color: #d29e46;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-weight: 100;
+    overflow: hidden;
+    padding: 0.5rem 4.5rem;
+    position: relative;
+    text-decoration: none;
+    transition: 0.2s transform ease-in-out;
+    will-change: transform;
+    z-index: 0;
+  }
+  
+  .coolBeans::after {
+    background-color: #d29e46;
+    border-radius: 3rem;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-100%, 0) rotate(10deg);
+    transform-origin: top left;
+    transition: 0.2s transform ease-out;
+    will-change: transform;
+    z-index: -1;
+  }
+  
+  .coolBeans:hover::after {
+    transform: translate(0, 0);
+  }
+  
+  .coolBeans:hover {
+    border: 2px solid transparent;
+    color: black;
+    transform: scale(1.05);
+    will-change: transform;
+  }
+
+  /*End :  button hero section */
+
+
+
+/* Start CES */
+
+.card {
+  transition: transform 0.3s ease-in-out;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.shadow-custom {
+  box-shadow: 0 4px 6px rgba(210, 158, 70, 0.1), 0 10px 20px rgba(210, 158, 70, 0.2);
+  transition: box-shadow 0.3s ease-in-out;
 }
+
+.card:hover {
+  box-shadow: 0 8px 12px rgba(210, 158, 70, 0.2), 0 20px 40px rgba(210, 158, 70, 0.3);
+}
+
+.showMoreButton {
+  border: 2px solid currentColor;
+  border-radius: 3rem;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  overflow: hidden;
+  padding: 0.5rem 1rem;
+  position: relative;
+  text-decoration: none;
+  transition: 0.2s transform ease-in-out;
+  will-change: transform;
+  z-index: 0;
+}
+
+.showMoreButton::after {
+  background-color: black;
+  border-radius: 3rem;
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-100%, 0) rotate(10deg);
+  transform-origin: top left;
+  transition: 0.2s transform ease-out;
+  will-change: transform;
+  z-index: -1;
+}
+
+.showMoreButton:hover::after {
+  transform: translate(0, 0);
+}
+
+.showMoreButton:hover {
+  border: 2px solid transparent;
+  color: white;
+  transform: scale(1.05);
+  will-change: transform;
+}
+
+/* End CES */
+
+
+
+/* Start GetAccess */
+
+.accessButton {
+  border: 2px solid currentColor;
+  border-radius: 3rem;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  overflow: hidden;
+  padding: 0.5rem 2rem;
+  position: relative;
+  text-decoration: none;
+  transition: 0.2s transform ease-in-out;
+  will-change: transform;
+  z-index: 0;
+}
+
+.accessButton::after {
+  background-color: black;
+  border-radius: 3rem;
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-100%, 0) rotate(10deg);
+  transform-origin: top left;
+  transition: 0.2s transform ease-out;
+  will-change: transform;
+  z-index: -1;
+}
+
+.accessButton:hover::after {
+  transform: translate(0, 0);
+}
+
+.accessButton:hover {
+  border: 2px solid transparent;
+  color: white;
+  transform: scale(1.05);
+  will-change: transform;
+}
+
+/* End GetAccess */
+
+
+
+/* Start Reviews */
+
+.review-text {
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  max-width: 100%;
+  overflow: hidden;
+  white-space: normal;
+  position: relative;
+}
+
+.control-button {
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 30px;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 100px;
+  transition: border-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.control-button:hover {
+  border-color: #ffcc00;
+  transform: scale(1.1);
+}
+
+/* End Reviews */
+
+
+
+/* Start: button pricing section */
+
+.pric-coolBeans {
+  border: 2px solid currentColor;
+  border-radius: 3rem;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  font-weight: 100;
+  overflow: hidden;
+  padding: 0.5rem 4.5rem;
+  position: relative;
+  text-decoration: none;
+  transition: 0.2s transform ease-in-out;
+  will-change: transform;
+  z-index: 0;
+}
+
+.pric-coolBeans::after {
+  background-color: #d29e46;
+  border-radius: 3rem;
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-100%, 0) rotate(10deg);
+  transform-origin: top left;
+  transition: 0.2s transform ease-out;
+  will-change: transform;
+  z-index: -1;
+}
+
+.pric-coolBeans:hover::after {
+  transform: translate(0, 0);
+}
+
+.pric-coolBeans:hover {
+  border: 2px solid transparent;
+  color: black;
+  transform: scale(1.05);
+  will-change: transform;
+}
+
+/* End: button pricing section */
