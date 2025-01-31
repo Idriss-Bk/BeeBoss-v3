@@ -80,14 +80,14 @@ const Pricing = () => {
 
   return (
     <div ref={sectionRef} className='min-h-screen bg-black text-white p-10 pb-32 flex flex-col items-center'>
-      <div className='pricing-title font-fraunces text-4xl font-light text-center mb-10 flex items-center justify-center mt-40'>
+      <div className='pricing-title font-fraunces text-2xl md:text-4xl font-light text-center mb-10 flex items-center justify-center mt-20 md:mt-40'>
         Unlock Your E-commerce Potential
       </div>
 
-      <div className='flex justify-center items-center gap-10'>
-        <div className='w-[400px] bg-gradient-to-r from-yellow-50 to-orange-300 text-black p-6 rounded-lg shadow-orange-300'>
-          <div className='pricing-subtitle font-fraunces text-3xl font-light text-center mb-5'>
-            Monthly <span className='font-bold text-4xl'>€89</span>
+      <div className='flex flex-col md:flex-row justify-center items-center gap-10'>
+        <div className='w-full md:w-[400px] bg-gradient-to-r from-yellow-50 to-orange-300 text-black p-6 rounded-lg shadow-orange-300'>
+          <div className='pricing-subtitle font-fraunces text-2xl md:text-3xl font-light text-center mb-5'>
+            Monthly <span className='font-bold text-3xl md:text-4xl'>€89</span>
           </div>
           <div className='text-center text-sm font-poppins mb-4'>
             Unlock premium features and benefits
@@ -132,7 +132,7 @@ const Pricing = () => {
               </div>
             </div>
           </div>
-          <button className='pric-coolBeans text-md font-poppins text-white border-2 border-white rounded-full px-10 py-4 flex justify-center mx-auto mb-4'>
+          <button className='pric-coolBeans text-md font-poppins text-white border-2 border-white rounded-full px-6 md:px-10 py-2 md:py-4 flex justify-center mx-auto mb-4'>
             Get Monthly Access Now
           </button>
           <div className='text-center text-sm font-light'>
@@ -140,14 +140,14 @@ const Pricing = () => {
           </div>
         </div>
 
-        <div className='w-[400px] bg-gradient-to-r from-yellow-50 to-orange-300 text-black p-6 rounded-lg shadow-orange-300 relative'>
-          <div className='absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2 bg-red-500 text-white px-2 rounded-lg shadow-lg font-fraunces font-light '>
-            <span className='text-[12px] '>Most Popular</span>
+        <div className='w-full md:w-[400px] bg-gradient-to-r from-yellow-50 to-orange-300 text-black p-6 rounded-lg shadow-orange-300 relative'>
+          <div className='absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2 bg-red-500 text-white px-2 rounded-lg shadow-lg font-fraunces font-light'>
+            <span className='text-[12px]'>Most Popular</span>
           </div>
-          <div className='pricing-subtitle font-fraunces text-3xl font-light text-center mb-5'>
-            One-time <span className='font-bold text-4xl'>€999</span>
+          <div className='pricing-subtitle font-fraunces text-2xl md:text-3xl font-light text-center mb-5'>
+            One-time <span className='font-bold text-3xl md:text-4xl'>€999</span>
           </div>
-          <div className='text-center text-sm  mb-4'>
+          <div className='text-center text-sm mb-4'>
             Unlock premium features and benefits
           </div>
           <hr className='border-t border-gray-800 opacity-50 my-4' />
@@ -190,7 +190,7 @@ const Pricing = () => {
               </div>
             </div>
           </div>
-          <button className='pric-coolBeans text-md font-poppins text-white border-2 border-white rounded-full px-10 py-4 flex justify-center mx-auto mb-4'>
+          <button className='pric-coolBeans text-md font-poppins text-white border-2 border-white rounded-full px-6 md:px-10 py-2 md:py-4 flex justify-center mx-auto mb-4'>
             Get One-time Access Now
           </button>
           <div className='text-center text-sm font-light'>

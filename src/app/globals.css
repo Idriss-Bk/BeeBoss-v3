@@ -12,7 +12,7 @@
     position: relative;
     width: 100%;
     height: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
     
   }
   
@@ -39,54 +39,69 @@
     z-index: 0;
   }
   
+/* Start: button hero section */
 
-  /* Star :  button hero section */
-  
+.coolBeans {
+  border: 2px solid currentColor;
+  border-radius: 3rem;
+  color: #d29e46;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  font-weight: 100;
+  overflow: hidden;
+  padding: 0.5rem 4.5rem;
+  position: relative;
+  text-decoration: none;
+  transition: 0.2s transform ease-in-out;
+  will-change: transform;
+  z-index: 0;
+}
+
+.coolBeans::after {
+  background-color: #d29e46;
+  border-radius: 3rem;
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-100%, 0) rotate(10deg);
+  transform-origin: top left;
+  transition: 0.2s transform ease-out;
+  will-change: transform;
+  z-index: -1;
+}
+
+.coolBeans:hover::after {
+  transform: translate(0, 0);
+}
+
+.coolBeans:hover {
+  border: 2px solid transparent;
+  color: black;
+  transform: scale(1.05);
+  will-change: transform;
+}
+
+/* Responsive adjustments for md and sm screens */
+@media (max-width: 768px) {
   .coolBeans {
-    border: 2px solid currentColor;
-    border-radius: 3rem;
-    color: #d29e46;
-    font-family: 'Roboto', sans-serif;
-    font-size: 2rem;
-    font-weight: 100;
-    overflow: hidden;
-    padding: 0.5rem 4.5rem;
-    position: relative;
-    text-decoration: none;
-    transition: 0.2s transform ease-in-out;
-    will-change: transform;
-    z-index: 0;
+    font-size: 0.875rem; /* 14px */
+    padding: 0.5rem 3rem;
   }
-  
-  .coolBeans::after {
-    background-color: #d29e46;
-    border-radius: 3rem;
-    content: '';
-    display: block;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    transform: translate(-100%, 0) rotate(10deg);
-    transform-origin: top left;
-    transition: 0.2s transform ease-out;
-    will-change: transform;
-    z-index: -1;
-  }
-  
-  .coolBeans:hover::after {
-    transform: translate(0, 0);
-  }
-  
-  .coolBeans:hover {
-    border: 2px solid transparent;
-    color: black;
-    transform: scale(1.05);
-    will-change: transform;
-  }
+}
 
-  /*End :  button hero section */
+@media (max-width: 640px) {
+  .coolBeans {
+    font-size: 0.75rem; /* 12px */
+    padding: 0.5rem 2rem;
+  }
+}
+
+/* End: button hero section */
+
 
 
 
@@ -203,6 +218,74 @@
 
 
 
+
+/* Start: button hero section */
+
+.ware-coolBeans {
+  border: 2px solid currentColor;
+  border-radius: 3rem;
+  color: #d29e46;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 100;
+  overflow: hidden;
+  padding: 3px 4.5rem;
+  position: relative;
+  text-decoration: none;
+  transition: 0.2s transform ease-in-out;
+  will-change: transform;
+  z-index: 0;
+}
+
+.ware-coolBeans::after {
+  background-color: #d29e46;
+  border-radius: 3rem;
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-100%, 0) rotate(10deg);
+  transform-origin: top left;
+  transition: 0.2s transform ease-out;
+  will-change: transform;
+  z-index: -1;
+}
+
+.ware-coolBeans:hover::after {
+  transform: translate(0, 0);
+}
+
+.ware-coolBeans:hover {
+  border: 2px solid transparent;
+  color: black;
+  transform: scale(1.05);
+  will-change: transform;
+}
+
+/* Responsive adjustments for md and sm screens */
+@media (max-width: 768px) {
+  .ware-coolBeans {
+    font-size: 0.875rem; /* 14px */
+    padding: 0.2rem 3rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .ware-coolBeans {
+    font-size: 0.75rem; /* 12px */
+    padding: 0.5rem 2rem;
+  }
+}
+
+/* End: button hero section */
+
+
+
+
+
 /* Start Reviews */
 
 .review-text {
@@ -232,7 +315,31 @@
   transform: scale(1.1);
 }
 
+/* Responsive adjustments for md and sm screens */
+@media (max-width: 768px) {
+  .review-text {
+    margin-bottom: 2rem; /* Add space below the review text */
+  }
+
+  .review-author {
+    position: relative; /* Change to relative positioning */
+    margin-top: 1rem; /* Add space above the author */
+  }
+}
+
+@media (max-width: 640px) {
+  .review-text {
+    margin-bottom: 2rem; /* Add space below the review text */
+  }
+
+  .review-author {
+    position: relative; /* Change to relative positioning */
+    margin-top: 1rem; /* Add space above the author */
+  }
+}
+
 /* End Reviews */
+
 
 
 
@@ -282,4 +389,20 @@
   will-change: transform;
 }
 
+/* Responsive adjustments for md and sm screens */
+@media (max-width: 768px) {
+  .pric-coolBeans {
+    font-size: 0.875rem; /* 14px */
+    padding: 0.5rem 3rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .pric-coolBeans {
+    font-size: 0.75rem; /* 12px */
+    padding: 0.5rem 2rem;
+  }
+}
+
 /* End: button pricing section */
+

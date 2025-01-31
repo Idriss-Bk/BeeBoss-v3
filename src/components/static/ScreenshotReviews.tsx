@@ -9,7 +9,7 @@ const ScreenshotReviews = () => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
+        if (entry.isIntersecting) {  
           setIsVisible(true);
           observer.disconnect();
         }
@@ -45,7 +45,7 @@ const ScreenshotReviews = () => {
           {Array.from({ length: 12 }).map((_, index) => (
             <div
               key={index}
-              className='screenshot-review-left w-[300px] h-[350px] bg-gray-700 bg-opacity-20 backdrop-blur-sm rounded-lg shadow-lg overflow-hidden flex-shrink-0'
+              className='screenshot-review-left w-[250px] h-[300px] bg-gray-700 bg-opacity-20 backdrop-blur-sm rounded-lg shadow-lg overflow-hidden flex-shrink-0'
             >
               <img src={`/ScreenReviews/rev${index + 1}.jpeg`} alt={`Screenshot ${index + 1}`} className='w-full h-full object-cover' />
             </div>
@@ -55,7 +55,7 @@ const ScreenshotReviews = () => {
           {Array.from({ length: 11 }).map((_, index) => (
             <div
               key={index}
-              className='screenshot-review-right w-[300px] h-[350px] bg-gray-700 bg-opacity-20 backdrop-blur-sm rounded-lg shadow-lg overflow-hidden flex-shrink-0'
+              className='screenshot-review-right w-[250px] h-[300px] bg-gray-700 bg-opacity-20 backdrop-blur-sm rounded-lg shadow-lg overflow-hidden flex-shrink-0'
             >
               <img src={`/ScreenReviews/rev${index + 12}.jpeg`} alt={`Screenshot ${index + 12}`} className='w-full h-full object-cover' />
             </div>

@@ -79,25 +79,25 @@ const WarehouseSection = () => {
 
   return (
     <div ref={sectionRef} className='min-h-screen bg-black text-white p-10 flex flex-col items-center'>
-      <div className='relative w-full h-[600px] overflow-hidden'>
+      <div className='relative w-full h-[600px] md:h-[400px] sm:h-[300px] overflow-hidden'>
         <img src='/warehousee.jpg' alt='Warehouse' className='w-full h-full object-cover' />
-        <div className='absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50'>
-          <h1 className='section-title font-fraunces text-7xl font-light text-center mb-4'>
+        <div className='absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 p-2'>
+          <h1 className='section-title font-fraunces text-5xl md:text-7xl font-light text-center mb-4'>
             Utilize Our Warehouse in <span className='font-bold '>Germany</span>
           </h1>
-          <h2 className='section-subtitle font-poppins text-2xl font-light text-center mb-8'>
+          <h2 className='section-subtitle font-poppins text-xl md:text-2xl font-light text-center mb-8'>
             High-Quality Dropshipping Products from Europe, Italy, and Turkey
           </h2>
         </div>
       </div>
-      <div className='section-description font-poppins font-light text-lg max-w-4xl mt-10 mb-6'>
+      <div className='section-description font-poppins font-light text-base md:text-lg max-w-4xl mt-10 mb-6'>
         Utilize our warehouse in Germany for shipping and returns of high-quality dropshipping products from Europe, Italy, and Turkey. Our products come from the European market, and we offer direct tracking service for your customers through DHL Germany.
 
         The best part? You can operate without any upfront payments or storage costs! Earn money as a middleman and use our custom packaging that we prepare just for you.
-
-        Start now with this all-in-one solution and take your online business to the next level!
+   <br></br>
+        <span className='font-semibold'>Start now with this all-in-one solution and take your online business to the next level!</span>
       </div>
-      <button className='section-button coolBeans text-md font-poppins text-white border-2 border-white rounded-full px-10 py-4 flex justify-center mx-auto'>
+      <button className='section-button ware-coolBeans text-md font-poppins text-white border-2 border-white rounded-full px-6 md:px-10  md:py-4 flex justify-center mx-auto'>
         Get Started Now
       </button>
     </div>

@@ -85,36 +85,36 @@ const Mission = () => {
   }, [isVisible]);
 
   return (
-    <div ref={sectionRef} className='h-screen bg-black'>
-      <div className='lg:flex flex'>
-        <div className='lg:w-5/12 p-2 flex items-start text-gray-50 font-poppins font-light text-lg max-w-[300px] mx-auto mt-20 mission-title'>
+    <div ref={sectionRef} className='p-6 bg-black  mb-20'>
+      <div className='lg:flex flex flex-col md:flex-row p-2'>
+        <div className='lg:w-5/12 md:w-full p-2 flex items-start text-gray-50 font-poppins font-light text-lg max-w-[300px] mx-auto  lg:mt-20 xl:mt-20 mission-title'>
           We focus on delivering innovative, all-in-one e-commerce solutions.
         </div>
-        <div className='lg:w-7/12 p-2 flex flex-col'>
-          <div className='text-2xl font-fraunces font-light text-gray-50 mt-40 mission-subtitle'>
+        <div className='lg:w-7/12 md:w-full p-2 flex flex-col'>
+          <div className='text-2xl font-fraunces font-light text-gray-50 mt-10 md:mt-20 mission-subtitle'>
             Building a successful dropshipping business is undeniably challenging. It requires a deep understanding of user needs, market trends, and technical feasibility. Our platform provides everything you need to succeed, from winning products to seamless fulfillment and custom branding.
           </div>
-          <div className='text-gray-50 flex justify-center mt-20 gap-20'>
+          <div className='text-gray-50 flex  md:flex-row justify-center  mt-10 md:mt-20 gap-10 md:gap-20'>
             <div className='flex justify-center items-center flex-col'>
-              <h2 className='text-5xl font-fraunces text-white'>
+              <h2 className='text-4xl lg:text-5xl xl:text-5xl font-fraunces text-white'>
                 <span ref={successfulProjectsRef}>0</span>
                 <span className='text-orange-300'>+</span>
               </h2>
-              <p>Successful Projects</p>
+              <p className='text-sm lg:text-xl xl:text-xl'>Successful Projects</p>
             </div>
             <div className='flex justify-center items-center flex-col'>
-              <h2 className='text-5xl font-fraunces text-white'>
+              <h2 className='text-4xl lg:text-5xl xl:text-5xl font-fraunces text-white'>
                 <span ref={productLaunchesRef}>0</span>
                 <span className='text-orange-300'>+</span>
               </h2>
-              <p>Product Launches</p>
+              <p className='text-sm lg:text-xl xl:text-xl'>Product Launches</p>
             </div>
             <div className='flex justify-center items-center flex-col'>
-              <h2 className='text-5xl font-fraunces text-white'>
+              <h2 className='text-4xl lg:text-5xl xl:text-5xl font-fraunces text-white'>
                 <span ref={happyCustomersRef}>0</span>
-                <span className='text-orange-300'>%</span>
+                <span className='text-orange-300 text-md lg:text-lg xl:text-lg'>%</span>
               </h2>
-              <p>Happy Customers</p>
+              <p className='text-sm lg:text-xl xl:text-xl'>Happy Customers</p>
             </div>
           </div>
         </div>

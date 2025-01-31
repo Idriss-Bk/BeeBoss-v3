@@ -40,31 +40,31 @@ const Reviews: React.FC = () => {
   };
 
   return (
-    <div className='min-h-screen bg-black py-10 '>
-      <div className='container mx-auto px-4 mt-32'>
-        <div className='flex flex-col items-center justify-center bg-yellow-50 text-black'>
+    <div className=' bg-black py-2 lg:py-10 xl:py-10 mb-20'>
+      <div className='container mx-auto px-4 mt-32 '>
+        <div className='flex flex-col items-center justify-center bg-yellow-50 text-black h-[350px] md:h-auto'>
           <div className='max-w-6xl mx-auto flex justify-between'>
-            <div className='w-58% p-6 flex flex-col justify-center items-start relative overflow-hidden'>
-              <div ref={reviewRef} className='review-text font-fraunces font-light text-3xl leading-snug w-[600px]'>
+            <div className='w-full md:w-5/12 p-6 flex flex-col justify-center items-start relative overflow-hidden'>
+              <div ref={reviewRef} className='review-text font-fraunces font-light text-xl md:text-3xl leading-snug w-full md:w-[800px]'>
                 {reviews[currentReview].text}
               </div>
-              <div className='review-author font-poppins text-lg mt-4 absolute bottom-0 left-0 flex items-center p-10'>
-                <img src={reviews[currentReview].image} alt={reviews[currentReview].author} className='w-10 h-12 rounded-lg mr-2' />
+              <div className='review-author font-poppins text-base md:text-lg mt-4 md:mt-10 absolute bottom-0 left-0 flex items-center p-10 md:p-4'>
+                <img src={reviews[currentReview].image} alt={reviews[currentReview].author} className='w-8 h-10 md:w-10 md:h-12 rounded-lg mr-2' />
                 {reviews[currentReview].author}
               </div>
             </div>
-            <div className='w-42% p-0 flex justify-center items-center'>
+            <div className='hidden md:flex w-42% p-0 flex justify-center items-center'>
               <img src='/bosses.jpeg' alt='Boss' className='w-[350px] h-[500px]' />
             </div>
           </div>
         </div>
       </div>
       <div className='flex justify-start mt-6 space-x-4 ml-6'>
-        <button onClick={handlePrevReview} className='control-button'>
-          <MdChevronLeft className='text-2xl' />
+        <button onClick={handlePrevReview} className='control-button text-xl md:text-2xl'>
+          <MdChevronLeft />
         </button>
-        <button onClick={handleNextReview} className='control-button'>
-          <MdChevronRight className='text-2xl' />
+        <button onClick={handleNextReview} className='control-button text-xl md:text-2xl'>
+          <MdChevronRight />
         </button>
       </div>
     </div>

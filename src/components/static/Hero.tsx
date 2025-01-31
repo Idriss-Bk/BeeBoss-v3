@@ -87,7 +87,7 @@ const Hero = () => {
 
   return (
     <div ref={sectionRef} className='h-screen bg-black'>
-      <div className='lg:flex h-screen flex justify-center items-center gap-20'>
+      <div className='lg:flex h-screen flex justify-center items-center gap-1 lg:gap-10 p-2'>
         <div className='lg:w-5/12 p-2 flex justify-center items-center flex-col mt-10'>
           <div ref={titleRef} className='font-fraunces text-6xl text-gray-50 font-light'>
             The Future of <span className='gradient-text font-bold'>Dropshipping</span> is Here
