@@ -42,11 +42,19 @@ const Hero = () => {
     if (isVisible) {
       const tl = gsap.timeline();
 
+      // Animate video container first
+      tl.fromTo(
+        videoContainerRef.current,
+        { opacity: 0, scale: 0.4 },
+        { opacity: 1, scale: 1, duration: 1, ease: 'power2.out' }
+      );
+
       // Animate title
       tl.fromTo(
         titleRef.current,
         { opacity: 0, y: -50 },
-        { opacity: 1, y: 0, duration: 1, ease: 'power2.out' }
+        { opacity: 1, y: 0, duration: 1, ease: 'power2.out' },
+        '-=0.5'
       );
 
       // Animate subtitle
@@ -92,20 +100,12 @@ const Hero = () => {
         { innerText: 2800, duration: 2, ease: 'power2.out', roundProps: 'innerText' },
         '-=2'
       );
-
-      // Animate video container
-      tl.fromTo(
-        videoContainerRef.current,
-        { opacity: 0, scale: 0.8 },
-        { opacity: 1, scale: 1, duration: 1, ease: 'power2.out' },
-        '-=1'
-      );
     }
   }, [isVisible]);
 
   return (
-    <div ref={sectionRef} className='h-screen bg-black'>
-      <div className='lg:flex h-screen flex justify-center items-center gap-1 lg:gap-10 p-2'>
+    <div ref={sectionRef} className=' bg-black md:mt-0 sm:mt-0 mt-10'>
+      <div className='lg:flex py-6 h-[600px] mb-20 lg:mt-10 flex justify-center items-center gap-1 lg:gap-10 p-2'>
         <div className='lg:w-5/12 p-2 flex justify-center items-center flex-col mt-10 absolute lg:relative z-30 lg:z-0 text-center lg:text-left'>
           <div ref={titleRef} className='font-fraunces text-4xl lg:text-6xl text-gray-50 font-light'>
             The Future of <span className='gradient-text font-bold'>Dropshipping</span> is Here
@@ -136,7 +136,7 @@ const Hero = () => {
           </div>
         </div>
         <div ref={videoContainerRef} className='lg:w-7/12 video-container rounded-2xl ' style={{ width: '600px', height: '400px' }}>
-          <video className='video-hero rounded-2xl' style={{ width: '100%', height: '100%' }} autoPlay loop muted>
+          <video className='video-hero rounded-2xl' style={{ width: '100%', height: '100%' }} autoPlay loop muted playsInline>
             <source src='/video-hero.mp4' type='video/mp4' />
             Your browser does not support the video tag.
           </video>
