@@ -40,6 +40,7 @@ const ScreenshotReviews = () => {
 
   return (
     <div ref={sectionRef} className='min-h-screen bg-black text-white p-10 flex flex-col items-center overflow-x-hidden'>
+        <div className='text-xl text-center font-fraunces font-light mb-10 lg:text-4xl xl:text-4xl'>Inspiring Success Stories:<span className='font-bold '>28K+</span>  Users and Counting</div>
       <div className='screenshot-reviews flex flex-col items-center space-y-4 w-full'>
         <div className='screenshot-line flex space-x-4 w-max'>
           {Array.from({ length: 12 }).map((_, index) => (
