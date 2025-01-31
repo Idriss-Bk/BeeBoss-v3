@@ -123,7 +123,7 @@ const Hero = () => {
                 <span ref={strategiesRef}>0</span>
                 <span className='text-orange-300'>+</span>
               </h2>
-              <p className='font-poppins text-lg text-gray-50'>Proven Strategies</p>
+              <p className='font-poppins text-lg text-gray-50'>Product Nisches</p>
             </div>
             <div className='flex justify-center items-center flex-col'>
               <h2 className='text-5xl font-fraunces text-white'>

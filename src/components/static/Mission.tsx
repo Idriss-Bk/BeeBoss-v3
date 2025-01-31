@@ -61,7 +61,7 @@ const Mission = () => {
         tl.fromTo(
           successfulProjectsRef.current,
           { innerText: 0 },
-          { innerText: 300, duration: 2, ease: 'power2.out', roundProps: 'innerText' },
+          { innerText: +1000, duration: 2, ease: 'power2.out', roundProps: 'innerText' },
           '-=0.5'
         );
       }
@@ -69,7 +69,7 @@ const Mission = () => {
         tl.fromTo(
           productLaunchesRef.current,
           { innerText: 0 },
-          { innerText: 200, duration: 2, ease: 'power2.out', roundProps: 'innerText' },
+          { innerText: 2800, duration: 2, ease: 'power2.out', roundProps: 'innerText' },
           '-=2'
         );
       }
@@ -77,7 +77,7 @@ const Mission = () => {
         tl.fromTo(
           happyCustomersRef.current,
           { innerText: 0 },
-          { innerText: 99, duration: 2, ease: 'power2.out', roundProps: 'innerText' },
+          { innerText: 100, duration: 2, ease: 'power2.out', roundProps: 'innerText' },
           '-=2'
         );
       }
@@ -100,21 +100,21 @@ const Mission = () => {
                 <span ref={successfulProjectsRef}>0</span>
                 <span className='text-orange-300'>+</span>
               </h2>
-              <p className='text-sm lg:text-xl xl:text-xl'>Successful Projects</p>
+              <p className='text-sm lg:text-xl xl:text-xl'>Winning Products</p>
             </div>
             <div className='flex justify-center items-center flex-col'>
               <h2 className='text-4xl lg:text-5xl xl:text-5xl font-fraunces text-white'>
                 <span ref={productLaunchesRef}>0</span>
                 <span className='text-orange-300'>+</span>
               </h2>
-              <p className='text-sm lg:text-xl xl:text-xl'>Product Launches</p>
+              <p className='text-sm lg:text-xl xl:text-xl'>Partners</p>
             </div>
             <div className='flex justify-center items-center flex-col'>
               <h2 className='text-4xl lg:text-5xl xl:text-5xl font-fraunces text-white'>
                 <span ref={happyCustomersRef}>0</span>
                 <span className='text-orange-300 text-md lg:text-lg xl:text-lg'>%</span>
               </h2>
-              <p className='text-sm lg:text-xl xl:text-xl'>Happy Customers</p>
+              <p className='text-sm lg:text-xl xl:text-xl'>Service</p>
             </div>
           </div>
         </div>
