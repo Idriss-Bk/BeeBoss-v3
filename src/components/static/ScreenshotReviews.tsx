@@ -47,7 +47,7 @@ const ScreenshotReviews = () => {
               key={index}
               className='screenshot-review-left w-[250px] h-[300px] bg-gray-700 bg-opacity-20 backdrop-blur-sm rounded-lg shadow-lg overflow-hidden flex-shrink-0'
             >
-              <img src={`/ScreenReviews/rev${index + 1}.jpeg`} alt={`Screenshot ${index + 1}`} className='w-full h-full object-cover' />
+              <img src={`/ScreenReviews/rev${index + 1}.png`} alt={`Screenshot ${index + 1}`} className='w-full h-full object-cover' />
             </div>
           ))}
         </div>
@@ -57,7 +57,7 @@ const ScreenshotReviews = () => {
               key={index}
               className='screenshot-review-right w-[250px] h-[300px] bg-gray-700 bg-opacity-20 backdrop-blur-sm rounded-lg shadow-lg overflow-hidden flex-shrink-0'
             >
-              <img src={`/ScreenReviews/rev${index + 12}.jpeg`} alt={`Screenshot ${index + 12}`} className='w-full h-full object-cover' />
+              <img src={`/ScreenReviews/rev${index + 9}.png`} alt={`Screenshot ${index + 9}`} className='w-full h-full object-cover' />
             </div>
           ))}
         </div>
