@@ -73,37 +73,37 @@ const CES: React.FC = () => {
       title: 'Winning Products',
       subtitle: 'Discover top-selling products.',
       icon: '/cup.svg',
-      detailedContent: <Winning />,
+    //   detailedContent: <Winning />,
     },
     {
       title: 'Product Pictures',
       subtitle: 'High-quality images for your products.',
       icon: '/camera.svg',
-      detailedContent: <Product />,
+    //   detailedContent: <Product />,
     },
     {
       title: 'Fulfillment',
       subtitle: 'Reliable and fast order fulfillment.',
       icon: '/truck.svg',
-      detailedContent: <Fulfillment />,
+    //   detailedContent: <Fulfillment />,
     },
     {
       title: 'Packaging',
       subtitle: 'Custom and eco-friendly packaging solutions.',
       icon: '/gift.svg',
-      detailedContent: <Packaging />,
+    //   detailedContent: <Packaging />,
     },
     {
       title: 'Content / Social Media Feed',
       subtitle: 'Engaging content for your social media.',
       icon: '/social-media.svg',
-      detailedContent: <Content />,
+    //   detailedContent: <Content />,
     },
     {
       title: 'Optimization',
       subtitle: 'Optimize your store for better performance.',
       icon: '/coding.svg',
-      detailedContent: <Optimization />,
+    //   detailedContent: <Optimization />,
     },
   ];
 
@@ -131,7 +131,7 @@ const CES: React.FC = () => {
                 <img src={category.icon} alt={category.title} className='w-28 h-28 lg:w-28 lg:h-28 sm:w-20 sm:h-20 md:w-20 md:h-20' />
               </div>
               <button
-                onClick={() => handleShowMore(category.detailedContent)}
+                // onClick={() => handleShowMore(category.detailedContent)}
                 className='showMoreButton text-md font-poppins text-white border-2 border-white rounded-full px-10 py-4 mt-10 flex justify-center items-center gap-2'
               >
                 Show More <MdReadMore className='text-2xl' />
@@ -140,9 +140,9 @@ const CES: React.FC = () => {
           ))}
         </div>
       </div>
-      <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
+      {/* <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
         {modalContent}
-      </Modal>
+      </Modal> */}
     </div>
   );
 };
