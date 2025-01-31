@@ -2,13 +2,13 @@
 import React, { useEffect, useRef, useState } from 'react';
 import gsap from 'gsap';
 import { MdReadMore } from "react-icons/md";
-import Winning from '../popups/winning';
-import Product from '../popups/product';
-import Fulfillment from '../popups/fulfillment';
-import Packaging from '../popups/packaging';
-import Content from '../popups/content';
-import Optimization from '../popups/optimization';
-import Modal from '../Modal';
+// import Winning from '../popups/winning';
+// import Product from '../popups/product';
+// import Fulfillment from '../popups/fulfillment';
+// import Packaging from '../popups/packaging';
+// import Content from '../popups/content';
+// import Optimization from '../popups/optimization';
+// import Modal from '../Modal';
 
 
 const CES: React.FC = () => {
