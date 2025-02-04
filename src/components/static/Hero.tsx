@@ -157,6 +157,8 @@ const Hero = () => {
                 <span className='text-orange-300'>+</span>
               </h2>
               <p className='font-poppins text-lg text-gray-50'>Users</p>
+              
+
             </div>
           </div>
           </div>
